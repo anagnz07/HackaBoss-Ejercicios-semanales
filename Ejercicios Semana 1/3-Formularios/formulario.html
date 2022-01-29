@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Formularios</h1>
+    </header>
+    <form name="formulario" method="get" action="#">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <p>
+          <label for="name">Nombre: </label>
+          <input type="text" name="name" id="name" autofocus required />
+        </p>
+        <p>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+          <label for="url">URL: </label>
+          <input
+            id="url"
+            type="url"
+            name="url"
+            placeholder="Escribe la URL de tu página web personal"
+          />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Fecha y Hora</legend>
+        <p>
+          <label for="date">Fecha: </label>
+          <input type="date" name="date" id="date" />
+        </p>
+        <p>
+          <label for="datetime">Fecha y Hora: </label>
+          <input type="datetime-local" name="datetime" id="datetime" />
+        </p>
+        <p>
+          <label for="time">Tiempo: </label>
+          <input type="time" name="time" id="time" />
+        </p>
+        <p>
+          <label for="month">Mes: </label>
+          <input type="month" name="month" id="month" />
+        </p>
+        <p>
+          <label for="week">Semana: </label>
+          <input type="week" name="week" id="week" />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Numeros</legend>
+        <p>
+          <label for="number">Numero (-10, 10): </label>
+          <input
+            type="number"
+            name="number"
+            value="0"
+            min="-10"
+            max="10"
+            id="number"
+          />
+        </p>
+        <p>
+          <label for="phone">Telefono: </label>
+          <input
+            type="tel"
+            name="phone"
+            value="123456789"
+            disabled
+            id="phone"
+          />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Buscador</legend>
+        <p>
+          <label for="search">Buscar: </label>
+          <input type="search" name="search" disabled id="search" />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Color</legend>
+        <p>
+          <label for="color">Color: </label>
+          <input type="color" name="micolor" id="color" />
+        </p>
+      </fieldset>
+
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
