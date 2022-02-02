@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio Flex</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>PERSONALIZA TU HAMBURGUESA</legend>
+                <fieldset>
+                    <legend>Ingredientes</legend>
+                    <input type="checkbox" name="queso" id="queso" />
+                    <label for="queso">Queso</label>
+                    <input type="checkbox" name="pimiento" id="pimiento" />
+                    <label for="pimiento">Pimiento</label>
+                    <input type="checkbox" name="cebolla" id="cebolla" />
+                    <label for="cebolla">Cebolla</label>
+                    <input type="checkbox" name="jamon" id="jamon" />
+                    <label for="jamon">Jamón</label>
+                    <input type="checkbox" name="huevo" id="huevo" />
+                    <label for="huevo">Huevo</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tamaño</legend>
+                    <input type="radio" name="pequeña" id="pequeña" />
+                    <label for="pequeña">Pequeña</label>
+                    <input type="radio" name="mediana" id="mediana" />
+                    <label for="mediana">Mediana</label>
+                    <input type="radio" name="grande" id="grande" />
+                    <label for="grande">Grande</label>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>DATOS DE ENTREGA</legend>
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required />
+                </p>
+
+                <p>
+                    <label for="direccion">Dirección</label>
+                    <input
+                        type="text"
+                        name="direccion"
+                        id="direccion"
+                        required
+                    />
+                </p>
+                <p>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="tel" id="tel" required />
+                </p>
+                <p>
+                    <label for="coment">Instrucciones especiales</label>
+                    <textarea
+                        name="coment"
+                        id="coment"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>MÉTODO DE PAGO</legend>
+                <p>
+                    <select name="menu" id="menu" required>
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="moneda">En metálico</option>
+                        <option value="bizum">Bizum</option>
+                        <option value="paypal">Paypal</option>
+                    </select>
+                </p>
+            </fieldset>
+            <button>Enviar</button>
+        </form>
+    </body>
+
+    <footer></footer>
+</html>

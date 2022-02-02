@@ -11,12 +11,19 @@
     <header>
       <h1>Formularios</h1>
     </header>
-    <form name="formulario" method="get" action="#">
+    <form method="get" action="#">
       <fieldset>
         <legend>Datos Personales</legend>
         <p>
           <label for="name">Nombre: </label>
-          <input type="text" name="name" id="name" autofocus required />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            autofocus
+            required
+            minlength="5"
+          />
         </p>
         <p>
           <label for="email">Email: </label>
@@ -60,7 +67,7 @@
       <fieldset>
         <legend>Numeros</legend>
         <p>
-          <label for="number">Numero (-10, 10): </label>
+          <label for="number">Numero </label>
           <input
             type="number"
             name="number"
@@ -76,7 +83,7 @@
             type="tel"
             name="phone"
             value="123456789"
-            disabled
+            readonly
             id="phone"
           />
         </p>

@@ -19,88 +19,94 @@
     </nav>
     <main>
       <section id="peliculas">
-        <h3>MI TOP 10 PELÍCULAS</h3>
-        <ol>
-          <li>EL padrino</li>
-          <li>La lista de Schindler</li>
-          <li>El padrino. Parte II</li>
-          <li>Cadena perpetua</li>
-          <li>Pulp Fiction</li>
-          <li>El Rey León</li>
-          <li>Forrest Gump</li>
-          <li>La vida es bella</li>
-          <li>Gladiator</li>
-          <li>Coco</li>
-        </ol>
+        <article>
+          <h3>MI TOP 10 PELÍCULAS</h3>
+          <ol>
+            <li>EL padrino</li>
+            <li>La lista de Schindler</li>
+            <li>El padrino. Parte II</li>
+            <li>Cadena perpetua</li>
+            <li>Pulp Fiction</li>
+            <li>El Rey León</li>
+            <li>Forrest Gump</li>
+            <li>La vida es bella</li>
+            <li>Gladiator</li>
+            <li>Coco</li>
+          </ol>
+        </article>
       </section>
       <section id="viaje">
-        <h3>MI VIAJE A JAPÓN</h3>
-        <img
-          src="https://www.nacionrex.com/__export/1604504218632/sites/debate/img/2020/11/04/bts-jungkook-foto-conceptual-individual-be-comeback-bts-teaser_1.jpg_172596871.jpg"
-          alt="foto japon"
-          width="250"
-        />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
-          debitis suscipit voluptas dolore recusandae reiciendis mollitia ipsam
-          doloremque et. Saepe odit magni fugiat voluptatum accusantium odio
-          natus molestias quas asperiores.
-        </p>
-      </section>
-      <div>
-        <aside>
+        <article>
+          <h3>MI VIAJE A JAPÓN</h3>
           <img
             src="https://www.nacionrex.com/__export/1604504218632/sites/debate/img/2020/11/04/bts-jungkook-foto-conceptual-individual-be-comeback-bts-teaser_1.jpg_172596871.jpg"
-            alt="foto personal"
-            width="150"
+            alt="foto japon"
+            width="250"
           />
-          <h2>BTS</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequuntur, vero?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+            debitis suscipit voluptas dolore recusandae reiciendis mollitia
+            ipsam doloremque et. Saepe odit magni fugiat voluptatum accusantium
+            odio natus molestias quas asperiores.
           </p>
+        </article>
+      </section>
+
+      <aside>
+        <img
+          src="https://www.nacionrex.com/__export/1604504218632/sites/debate/img/2020/11/04/bts-jungkook-foto-conceptual-individual-be-comeback-bts-teaser_1.jpg_172596871.jpg"
+          alt="foto personal"
+          width="150"
+        />
+        <h2>BTS</h2>
+        <p>Aqui escribo todo lo que se me ocurre</p>
+        <address>
           <a href="mailto:anagnz08@gmail.com">anagnz08@gmail.com</a>
-        </aside>
-      </div>
+        </address>
+      </aside>
+      <footer>
+        <h2>MÁNDAME UN MENSAJE</h2>
+        <form id="formulario">
+          <fieldset>
+            <p>
+              <label for="name">Nombre: </label>
+              <input type="text" name="name" id="name" required />
+              <label for="mail">Email: </label>
+              <input type="email" name="mail" id="mail" required />
+              <label for="birthdate">Fecha de nacimiento: </label>
+              <input type="date" name="birthdate" id="birthdate" required />
+            </p>
+            <p>
+              <label for="comments">Comentarios: </label>
+              <textarea
+                name="comments"
+                id="comments"
+                placeholder="Escribe lo que quieras"
+                cols="60"
+              ></textarea>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="newsletterCheck"
+                name="newsletterCheck"
+              />
+              <label for="newsletterCheck">Suscribete a la newsletter</label>
+              <button>Enviar</button>
+            </p>
+          </fieldset>
+        </form>
+        </footer>
     </main>
 
-    <footer>
-      <h2>MÁNDAME UN MENSAJE</h2>
-      <form id="formulario">
-        <fieldset>
-          <p>
-            <label for="name">Nombre: </label>
-            <input type="text" name="name" id="name" required />
-            <label for="mail">Email: </label>
-            <input type="email" name="mail" id="mail" required />
-            <label for="birthdate">Fecha de nacimiento: </label>
-            <input type="date" name="birthdate" id="birthdate" required />
-          </p>
-          <p>
-            <label for="comments">Comentarios: </label>
-            <textarea
-              name="comments"
-              id="comments"
-              placeholder="Escribe lo que quieras"
-              cols="60"
-            ></textarea>
-          </p>
-          <p>
-            <input
-              type="checkbox"
-              id="newsletterCheck"
-              name="newsletterCheck"
-            />
-            <label for="newsletterCheck">Suscribete a la newsletter</label>
-            <button>Enviar</button>
-          </p>
-        </fieldset>
       </form>
-      <div>
+      <footer>
         <a href="">Terminos y condiciones</a>
-        <span>|</span>
+        
         <a href="">Política de privacidad</a>
-      </div>
-    </footer>
+
+      </footer>
+      
+    
   </body>
 </html>

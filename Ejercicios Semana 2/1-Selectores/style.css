@@ -1,0 +1,40 @@
+header {
+  background: black;
+  color: white;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+h2 {
+  color: blue;
+}
+
+.importante {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+thead tr {
+  background-color: rgb(104, 16, 104);
+  color: white;
+  font-weight: bold;
+}
+
+tbody th {
+  background-color: rgba(79, 0, 110, 0.3);
+}
+
+tbody tr {
+  background-color: violet;
+}
+tbody tr:nth-child(even) {
+  background-color: lightpink;
+}
+
+#descanso {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
