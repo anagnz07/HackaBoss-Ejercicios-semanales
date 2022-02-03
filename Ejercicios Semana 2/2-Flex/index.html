@@ -53,7 +53,7 @@
                     />
                 </p>
                 <p>
-                    <label for="telefono">Teléfono</label>
+                    <label for="tel">Teléfono</label>
                     <input type="tel" name="tel" id="tel" required />
                 </p>
                 <p>
@@ -70,6 +70,9 @@
                 <legend>MÉTODO DE PAGO</legend>
                 <p>
                     <select name="menu" id="menu" required>
+                        <option value="" hidden selected disabled>
+                            Selecciona una opción
+                        </option>
                         <option value="tarjeta">Tarjeta de crédito</option>
                         <option value="moneda">En metálico</option>
                         <option value="bizum">Bizum</option>
@@ -80,6 +83,4 @@
             <button>Enviar</button>
         </form>
     </body>
-
-    <footer></footer>
 </html>
