@@ -1,0 +1,29 @@
+* {
+    background-color: rgba(203, 250, 253, 0.952);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: pink;
+}
+
+li {
+    display: inline-block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+}
+
+.fotoperfil {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.perfil {
+}
