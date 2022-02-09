@@ -5,19 +5,19 @@
 header {
     background: black;
     color: white;
-    height: 5rem;
-    line-height: 5rem;
+    padding: 2rem;
     text-align: center;
 }
-main {
+section {
     margin: 1rem;
 }
 table {
     margin-left: 1rem;
 }
 
-ul {
-    list-style: circle;
+ul li {
+    list-style: circle inside;
+    margin: 1rem;
 }
 
 h2 {
@@ -28,8 +28,15 @@ h2 {
     text-decoration: underline;
     font-weight: bold;
 }
+table {
+    margin: 1rem;
+}
+th,
+td {
+    padding: 0.5rem;
+}
 
-thead tr {
+thead tr th {
     background-color: rgb(104, 16, 104);
     color: white;
     font-weight: bold;

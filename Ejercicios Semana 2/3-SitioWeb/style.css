@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background: rgb(202, 251, 255);
+
+  font-family: Lato, sans-serif;
+}
+
+/* HEADER */
+header menu {
+  display: flex;
+  list-style: none;
+
+  height: 5rem;
+  font-size: 1.2rem;
+
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+
+  color: rgb(179, 0, 179);
+  font-weight: bold;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.445);
+}
+
+a:hover {
+  color: magenta;
+}
+
+/* FOOTER */
+footer {
+  padding: 0.5rem;
+}
+
+/* MAIN */
+
+main {
+  max-width: 800px;
+  margin: auto;
+  flex-grow: 1;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive, Lato, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2,
+p {
+  margin: 1rem;
+}
+
+/* ABOUT */
+main#about {
+  display: flex;
+  gap: 2rem;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#about section {
+  max-width: 300px;
+  width: 100vh;
+  text-align: center;
+}
+
+#about img {
+  max-height: 400px;
+  max-width: 400px;
+  width: 90vw;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.452);
+}
+
+/* PROYECTOS */
+
+#proyectos ul,
+#proyectos menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#proyectos article {
+  background: white;
+  width: 15rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.226);
+}
+
+#proyectos article img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+#proyectos article h2 {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#proyectos p,
+menu {
+  margin: 1rem;
+}
+
+#proyectos menu {
+  justify-content: space-evenly;
+}
+
+#proyectos article menu a {
+  font-size: 0;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#proyectos article menu a[href*="github"] {
+  background-image: url(imagenes/iconmonstr-github-1.svg);
+}
+
+#proyectos article menu a[href*="misitio"] {
+  background-image: url(imagenes/iconmonstr-eye-3.svg);
+}
+
+/* #proyectos > article {
+  display: inline-block;
+}
+ */

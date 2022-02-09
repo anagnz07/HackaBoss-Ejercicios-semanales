@@ -1,20 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rowdies:wght@300&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Rowdies:wght@300&family=Rubik&display=swap");
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    min-height: 100vh;
     background: url(/img/hamburguesa.png) no-repeat center;
     background-size: cover;
+    background-position: center;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 3rem;
+    font-family: "Poppins";
+    flex-direction: column;
 }
 
 fieldset {
-    border: 0;
+    border: none;
+    text-align: center;
 }
 
-.titulo {
+form > fieldset > legend {
+    font-size: 2rem;
+    font-weight: bolder;
     text-transform: uppercase;
-    font-weight: bold;
+}
+
+fieldset fieldset legend {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+fieldset fieldset {
+    flex-direction: row;
+    gap: 1rem;
+    font-weight: lighter;
+}
+
+fieldset legend p {
+    display: flex;
+    flex-direction: column;
 }
