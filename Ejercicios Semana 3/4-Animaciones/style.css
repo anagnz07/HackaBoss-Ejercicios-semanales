@@ -25,13 +25,9 @@ svg {
 
 .like {
     animation: latido 0.5s forwards;
-    display: inline-block;
 }
 
 @keyframes latido {
-    0% {
-        transform: scale(1);
-    }
     20% {
         transform: scale(1.5);
     }
@@ -42,7 +38,6 @@ svg {
         transform: scale(1.5);
     }
     100% {
-        transform: scale(1);
         fill: red;
     }
 }

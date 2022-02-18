@@ -26,38 +26,34 @@ body {
     flex-wrap: wrap;
 }
 
-.cajas:hover .caja:nth-child(1) {
-    transform: rotate(90deg);
-}
-.cajas:hover .caja:nth-child(2) {
-    transform: rotate(-90deg);
-}
-.cajas:hover .caja:nth-child(3) {
-    transform: rotate(-90deg);
-}
-.cajas:hover .caja:nth-child(4) {
-    transform: rotate(90deg);
-}
-
-.caja {
+.cajas > div {
     height: 100px;
     width: 100px;
     transition: transform 1s;
 }
 
-.roja {
-    background-color: red;
+.arribaIzquierda {
     transform-origin: 0% 0%;
+    background-color: red;
 }
-.amarilla {
+.arribaDerecha {
     background-color: yellow;
     transform-origin: 100% 0%;
 }
-.azul {
+.abajoIzquierda {
     background-color: blue;
     transform-origin: 0% 100%;
 }
-.verde {
+.abajoDerecha {
     background-color: green;
     transform-origin: 100% 100%;
+}
+
+.cajas:hover .arribaIzquierda,
+.cajas:hover .abajoDerecha {
+    transform: rotate(90deg);
+}
+.cajas:hover .arribaDerecha,
+.cajas:hover .abajoIzquierda {
+    transform: rotate(-90deg);
 }
