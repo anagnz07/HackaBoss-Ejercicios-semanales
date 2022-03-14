@@ -5,6 +5,7 @@ for (let i = 8; i <= 22; i += 1) {
 }
 
 let cucus;
+
 for (let hora = 8; hora <= 22; hora += 1) {
     cucus = "";
 
@@ -19,6 +20,7 @@ for (let hora = 8; hora <= 22; hora += 1) {
     }
     console.log(`${hora} ${cucus}`);
 }
+
 // VALOR INICIAL ; CONDICION DEL BUCLE ; ACCION EN CADA VUELTA
 // for (let i = 0; i <= 24; i += 1) {
 //     if (i >= 8 && i <= 22) {
